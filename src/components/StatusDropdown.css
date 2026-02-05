@@ -1,0 +1,31 @@
+.status-dropdown-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+
+.dropdown-container {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+  min-width: 174px;
+  width: 174px;
+}
+
+.dropdown-item {
+  padding: 10px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  width: 100%;
+}
+
+.dropdown-item:hover {
+  opacity: 0.9;
+}
+
+.dropdown-item.selected::after {
+  float: right;
+}

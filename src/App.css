@@ -1,0 +1,58 @@
+.App {
+  background: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.header-tabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFDADA;
+  padding: 20px 32px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.tabs-left {
+  display: flex;
+  gap: 40px;
+}
+
+.tabs-right {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #000;
+  transition: background-color 0.2s;
+}
+
+
+
+.add-task-btn {
+  background-color: #FFDADA;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 30px auto 0;
+  display: block;
+  color: #000;
+  transition: background-color 0.2s;
+}
+
+.add-task-btn:hover {
+  background-color: #ffc9c9;
+}
+
+.add-task-btn:active {
+  transform: translateY(1px);
+}

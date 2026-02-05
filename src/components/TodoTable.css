@@ -1,0 +1,144 @@
+.table-container {
+  width: 1160px;
+  margin: 0 auto 30px;
+}
+
+.todo-table {
+  background: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th,
+td {
+  border: 1px solid #000000;
+  text-align: center;
+  font-size: 14px;
+  height: 52px;
+  vertical-align: middle;
+}
+
+th {
+  font-weight: 600;
+  padding: 15px;
+  background-color: #fff;
+  color: #000;
+}
+
+th:first-child { width: 55%; }
+th:nth-child(2) { width: 20%; }
+th:nth-child(3) { width: 15%; }
+th:nth-child(4) { width: 10%; }
+
+th:nth-child(4),
+td:nth-child(4) {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid #000000;
+  padding: 0;
+  background: transparent;
+}
+
+.editable-cell {
+  padding: 15px;
+  cursor: pointer;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editable-cell:hover {
+  background-color: #f9f9f9;
+}
+
+.edit-input,
+.date-input {
+  padding: 8px;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  font-size: 14px;
+  text-align: center;
+  width: 90%;
+  background: white;
+  color: #000;
+}
+
+.edit-input:focus,
+.date-input:focus {
+  outline: none;
+  border-color: #ffa8a8;
+}
+
+.status-badge {
+  width: 174px;
+  height: 28px;
+  border-radius: 4px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  color: #000;
+  transition: opacity 0.2s;
+}
+
+.status-badge:hover {
+  opacity: 0.9;
+}
+
+.status-badge::after {
+  content: "▼";
+  font-size: 10px;
+  margin-left: 6px;
+  opacity: 0.7;
+}
+
+.status-active { 
+  background: #FFBABACC !important; 
+}
+
+.status-completed { 
+  background: #D0FFBA !important; 
+}
+
+.status-cancelled { 
+  background: #FFFEBACC !important; 
+}
+
+.delete-btn {
+  background: #FFDADA;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: background 0.2s;
+  color: #000;
+}
+
+.delete-btn:hover {
+  background: #ffc9c9;
+}
+
+.past-deadline {
+  color: #ff0000;
+  font-weight: normal;
+}
+
+.empty-table {
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+}
