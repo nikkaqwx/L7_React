@@ -18,7 +18,6 @@
   position: relative;
 }
 
-/* Крестик закрытия */
 .close-button {
   position: absolute;
   top: 20px;
@@ -48,7 +47,7 @@
 .popup-header h2 {
   text-align: center;
   font-size: 18px;
-  margin-bottom: 30px; /* Уменьшили */
+  margin-bottom: 30px;
   color: #000;
   font-weight: 600;
   padding-right: 40px;
@@ -59,7 +58,6 @@
   padding-top: 0;
 }
 
-/* Метки */
 .form-label {
   position: absolute;
   left: 30px;
@@ -74,26 +72,24 @@
   padding: 0;
 }
 
-/* Позиции для каждой метки - уменьшаем отступы */
 .form-label:nth-child(1) { 
   top: 0; 
 }
 
 .form-label:nth-child(2) { 
-  top: 60px; /* Уменьшили с 64px */
+  top: 60px;
 }
 
 .form-label:nth-child(3) { 
-  top: 120px; /* Уменьшили с 128px */
+  top: 120px;
 }
 
-/* Контейнеры полей */
 .form-field {
   margin-left: 140px;
   height: 40px;
   display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Уменьшили с 24px */
+  margin-bottom: 20px; 
   padding: 0;
 }
 
@@ -119,7 +115,6 @@
   border-color: #ffa8a8;
 }
 
-/* Кнопка статуса */
 .status-button-container {
   display: flex;
   align-items: center;
@@ -165,7 +160,6 @@
   flex-shrink: 0;
 }
 
-/* Поле даты */
 .date-input-container {
   position: relative;
   width: 100%;
@@ -196,12 +190,11 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
   opacity: 1;
 }
 
-/* Футер - УМЕНЬШАЕМ ОТСТУПЫ */
 .popup-footer {
   display: flex;
   justify-content: center;
-  margin-top: 30px; /* Уменьшили с 40px */
-  padding-top: 0; /* Убрали padding-top */
+  margin-top: 30px;
+  padding-top: 0; 
 }
 
 .submit-btn {
@@ -225,7 +218,6 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
   transform: translateY(1px);
 }
 
-/* Мобильная адаптация */
 @media (max-width: 600px) {
   .popup {
     width: 90%;
@@ -242,7 +234,7 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
   
   .popup-header h2 {
     padding-right: 30px;
-    margin-bottom: 25px; /* Уменьшили */
+    margin-bottom: 25px;
   }
   
   .form-label {
@@ -256,10 +248,10 @@ input[type="date"]::-webkit-calendar-picker-indicator:hover {
   
   .form-field {
     margin-left: 0;
-    margin-bottom: 16px; /* Уменьшили */
+    margin-bottom: 16px;
   }
   
   .popup-footer {
-    margin-top: 25px; /* Уменьшили */
+    margin-top: 25px;
   }
 }

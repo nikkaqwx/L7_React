@@ -62,7 +62,7 @@ function TodoPopup({ onAdd, onClose }) {
     <div className="popup-overlay" onClick={handleOverlayClick}>
       <div className="popup" onClick={e => e.stopPropagation()} onKeyDown={handleKeyDown}>
         
-        {/* УВЕЛИЧЕННЫЙ КРЕСТИК */}
+        {}
         <button 
           className="close-button" 
           onClick={onClose}
@@ -92,12 +92,12 @@ function TodoPopup({ onAdd, onClose }) {
         </div>
 
         <div className="popup-content">
-          {/* Метки абсолютно позиционированы */}
+          {}
           <div className="form-label">Описание</div>
           <div className="form-label">Статус</div>
           <div className="form-label">Дедлайн</div>
 
-          {/* Поля ввода - точно напротив меток */}
+          {}
           <div className="form-field">
             <input
               className="form-input"
